@@ -28,6 +28,7 @@ public class Game
 			doors[location] = new LockedDoor(keys[i].getCode());
 		}
 
+		//create no lock door
 		for (int i = 0; i < numOfDoors; i++)
 		{
 			if (doors[i] == null)
@@ -35,7 +36,8 @@ public class Game
 				doors[i] = new Door();
 			}
 		}
-
+		
+		//test game
 		for (int i = 0; i < numOfDoors; i++)
 		{
 			System.out.println(doors[i]);

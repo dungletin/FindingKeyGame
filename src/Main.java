@@ -5,6 +5,5 @@ public class Main
 	{
 		
 		new Game();
-		System.out.println(123);
 	}
 }
