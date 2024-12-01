@@ -19,7 +19,7 @@ public class Game extends JFrame
 	{
 
 		doors = new Door[numOfDoors];
-		
+
 		setLayout(new GridLayout());
 		add(createKeyPanel());
 		add(createDoorPanel());
@@ -104,11 +104,13 @@ public class Game extends JFrame
 		// add buttons into frame
 		for (int i = 0; i < numOfDoors; i++)
 		{
-			//Temp set the text to check if the code work
+			// Temp set the text to check if the code work
 			doorPanel.add(doors[i]);
-			if(doors[i].isLocked()) {
+			if (doors[i].isLocked())
+			{
 				doors[i].setText(doors[i].toString());
-			} else
+			}
+			else
 			{
 				doors[i].setText("no lock");
 			}
@@ -135,5 +137,8 @@ public class Game extends JFrame
 		keyPanel.setPreferredSize(new Dimension(400, 400));
 		return keyPanel;
 	}
+	
+	
+	
 
 }
