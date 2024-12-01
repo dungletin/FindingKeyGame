@@ -1,4 +1,3 @@
-import java.util.Random;
 
 public class LockedDoor extends Door
 {
@@ -13,10 +12,20 @@ public class LockedDoor extends Door
 	{
 		return this.locker;
 	}
-	
+
 	@Override
-	public String toString() {
+	public String toString()
+	{
 		return "Lock " + locker;
+	}
+
+	/*
+	 * Door has locker
+	 */
+	@Override
+	public boolean isLocked()
+	{
+		return true;
 	}
 
 }
